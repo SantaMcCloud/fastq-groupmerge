@@ -1,24 +1,21 @@
-command used: python script/fastq_groupmerge.py --metadata Tests/test-data/metadata_1.csv Tests/test-data/ Tests/test_1/
-
-In column 6 the followed values are set: sample_id = Test group = nan. Since one of both is NaN, this line will be ignored!
-In column 7 the followed values are set: sample_id = nan group = Test. Since one of both is NaN, this line will be ignored!
+command used: python script/fastq_groupmerge.py Tests/test-data/ --metadata Tests/test-data/metadata_1.csv Tests/test_1/
 
 🔹 Merging samples for group 'A1' -> ['A1']
   ➕ Adding A1_forward.fastq.gz and A1_reverse.fastq.gz to group A1
-✅ Done: A1_R1.fastq.gz, A1_R2.fastq.gz
+✅ Done: A1_forward.fastq.gz, A1_reverse.fastq.gz
 
 🔹 Merging samples for group 'B2' -> ['B2']
   ➕ Adding B2_forward.fastq and B2_reverse.fastq to group B2
-✅ Done: B2_R1.fastq.gz, B2_R2.fastq.gz
+✅ Done: B2_forward.fastq.gz, B2_reverse.fastq.gz
 
 🔹 Merging samples for group 'control' -> ['A1', 'A2']
   ➕ Adding A1_forward.fastq.gz and A1_reverse.fastq.gz to group control
-  ➕ Adding A2_forward.fastq and A2_reverse.fastq to group control
-✅ Done: control_R1.fastq.gz, control_R2.fastq.gz
+  ➕ Adding A2_forward.fastqsanger and A2_reverse.fastqsanger to group control
+✅ Done: control_forward.fastq.gz, control_reverse.fastq.gz
 
 🔹 Merging samples for group 'treatment' -> ['B1', 'B2']
   ➕ Adding B1_forward.fastq and B1_reverse.fastq to group treatment
   ➕ Adding B2_forward.fastq and B2_reverse.fastq to group treatment
-✅ Done: treatment_R1.fastq.gz, treatment_R2.fastq.gz
+✅ Done: treatment_forward.fastq.gz, treatment_reverse.fastq.gz
 
 🎉 All merges complete!
